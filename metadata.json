@@ -1,0 +1,6 @@
+{
+  "name": "Tienda de Ropa Africana de Verano",
+  "description": "Una tienda exclusiva de moda africana de verano con diseños vibrantes, catálogo interactivo, carrito de compras y un diseñador de estampados impulsado por IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
