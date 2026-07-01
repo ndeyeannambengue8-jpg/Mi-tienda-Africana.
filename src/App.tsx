@@ -19,6 +19,7 @@ import ReviewsSection from './components/ReviewsSection';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
 import PromoBanner from './components/PromoBanner';
+import StoreLocation from './components/StoreLocation';
 
 export default function App() {
   const [activeTab, setActiveTab] = React.useState<string>('shop');
@@ -131,7 +132,7 @@ export default function App() {
   const categoriesList = [
     { id: 'todos', label: 'Ver Todo' },
     { id: 'vestidos', label: 'Vestidos' },
-    { id: 'camisas', label: 'Camisas' },
+    { id: 'camisas', label: 'Camisas de Verano' },
     { id: 'faldas', label: 'Faldas' },
     { id: 'conjuntos', label: 'Conjuntos' },
     { id: 'playa', label: 'Ropa de Playa' },
@@ -305,6 +306,19 @@ export default function App() {
               transition={{ duration: 0.35 }}
             >
               <ReviewsSection reviews={reviews} onAddReview={handleAddReview} />
+            </motion.div>
+          )}
+
+          {/* Store Location view */}
+          {activeTab === 'location' && (
+            <motion.div
+              key="location-view"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.35 }}
+            >
+              <StoreLocation />
             </motion.div>
           )}
 

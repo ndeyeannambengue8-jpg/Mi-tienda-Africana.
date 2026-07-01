@@ -109,7 +109,7 @@ export default function VirtualFittingRoom({
                         : 'border-gray-100 hover:border-gray-200 bg-white'
                     }`}
                   >
-                    <div className="w-12 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-100">
+                    <div className="w-12 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-100 flex items-center justify-center">
                       <img 
                         src={prod.image} 
                         alt={prod.name} 
@@ -194,7 +194,7 @@ export default function VirtualFittingRoom({
                         <img 
                           src={activeProduct.image} 
                           alt={activeProduct.name} 
-                          className="w-full h-full object-cover rounded-lg"
+                          className="w-full h-full object-cover rounded-lg" 
                           referrerPolicy="no-referrer"
                         />
                       </div>
@@ -241,7 +241,7 @@ export default function VirtualFittingRoom({
                         <img 
                           src={activeProduct.image} 
                           alt={activeProduct.name} 
-                          className="w-full h-full object-cover rounded-lg"
+                          className="w-full h-full object-cover rounded-lg" 
                           referrerPolicy="no-referrer"
                         />
                       </div>

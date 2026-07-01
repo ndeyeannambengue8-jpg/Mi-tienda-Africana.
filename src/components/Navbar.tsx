@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Sparkles, Shirt, MessageSquare, Menu, X, Search } from 'lucide-react';
+import { ShoppingBag, Sparkles, Shirt, MessageSquare, Menu, X, Search, MapPin } from 'lucide-react';
 import { CartItem } from '../types';
 
 interface NavbarProps {
@@ -26,7 +26,8 @@ export default function Navbar({
     { id: 'shop', label: 'Colección', icon: Shirt },
     { id: 'designer', label: 'Diseñador IA', icon: Sparkles },
     { id: 'fitting', label: 'Probador Virtual', icon: Shirt },
-    { id: 'reviews', label: 'Opiniones', icon: MessageSquare }
+    { id: 'reviews', label: 'Opiniones', icon: MessageSquare },
+    { id: 'location', label: 'Ubicación', icon: MapPin }
   ];
 
   return (

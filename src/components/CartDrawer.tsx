@@ -102,7 +102,7 @@ export default function CartDrawer({
                         className="flex items-center space-x-4 p-3 rounded-2xl border border-pink-50/80 bg-white shadow-sm"
                       >
                         {/* Image */}
-                        <div className="w-16 h-20 rounded-xl overflow-hidden bg-gray-50 shrink-0">
+                        <div className="w-16 h-20 rounded-xl overflow-hidden bg-gray-50 shrink-0 flex items-center justify-center">
                           <img 
                             src={item.product.image} 
                             alt={item.product.name} 
